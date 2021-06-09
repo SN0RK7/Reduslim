@@ -1,0 +1,281 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    background-color: #F4F4F4;
+    font-family: 'Montserrat', sans-serif;
+    font-style: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+.container{
+    display:flex;
+    margin-top: 75px;
+}
+.left{
+    background: rgb(66,138,96);
+    background: linear-gradient(180deg, rgba(66,138,96,1) 0%, rgba(53,115,79,1) 100%);
+    margin-bottom: 75px;
+    height: 500px;
+}
+.logo{
+    padding-top: 40px;
+    color: white;
+    padding-left: 40px;
+}
+.main{
+    margin-top: 17px;
+    box-shadow:inset 0 24px 80 0 #000000;
+}
+.ellipse{
+    width: 150px;
+    height: 150px;
+    background-color: #428A60;
+    border-radius: 50%;
+    width: 398px;
+    height: 398px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.drug{
+    margin-top:152px;
+    margin-left: 50px;
+}
+.l-text{
+    margin-left: 50px;
+    color: white;
+}
+.right{
+    height: 500px;
+    background:white;
+}
+.top{
+    background:#E4E4E4;
+}
+.right-text{
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 128px;
+    padding-right: 128px;
+    font-weight: 800;
+    font-size: 30px;
+    transition: 0.3s;
+}
+.right-text:hover{
+    transform: translateY(-4px)
+}
+.form{
+    text-align: center;
+    margin-top: 52px;
+}
+label{
+    text-align: left;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 130%;
+    transition: 0.3s;
+}
+label:hover{
+    transform: translateY(-4px)
+}
+.form input {
+    border: 1px solid #E4E4E4;
+	border-radius: 5px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+	font-size: 15px;
+    background:#F8F8F8;
+    transition: 0.3s;
+}
+input:hover{
+    transform: translateY(-4px)
+}
+#phone{
+    margin-right: 20px;
+    width: 180px;
+}
+.footer__select-item{
+    border: 1px solid #E4E4E4;
+	border-radius: 5px;
+    background:#F8F8F8;
+
+}
+.form__field:not(:last-child){
+    width: 320px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    margin-bottom: 20px;
+}
+.footer__select-item {
+    font-size: 13px;
+    background-repeat: no-repeat;
+    color: #212121;
+    font-weight: 600;
+    font-size: 14px;
+    width: 120px;
+    background-image:url("../img/ru.png");
+    background-position:60% center ;
+    padding-left: 20px;
+}
+.footer__select-item:focus,
+.footer__select-item:active {
+    outline: none;
+    
+} 
+.lang__item{
+    color: #212121;
+    font-weight: 600;
+    font-size: 14px;
+}
+span{
+    color: #428A60;
+}
+::placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #212121;
+    opacity: 0.2;
+}
+.form__btn button{
+    margin-top: 48px;
+}
+button{
+    margin-top: 20px;
+    background: #428A60;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 320px;
+    border-style: none;
+    padding: 12px 114px 12px 114px;
+    transition: 0.3s;
+}
+button:hover{
+    background: #59c790;
+}
+.btn-items{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-text{
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    margin-right: 10px;
+}
+@media(max-width:992px){
+    .footer{
+        overflow: hidden;
+    }
+}
+
+@media(max-width:768px){
+    body{
+        background:white
+    }
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        background:white;
+        margin-bottom: 37px;
+    }
+    .logo{
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        padding-left: 0;
+    }
+    .ellipse{
+        text-align: center;
+        justify-content: center;
+    }
+    .l-text{
+        color: black;
+        position: absolute;
+        top:115px;
+        right: 30px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .top{
+        background:white;
+    }
+    .right-text{
+        padding: 0;
+        font-weight: 800;
+        font-size: 30px;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+    }
+    .form__field:not(:last-child){
+        width: 100%;
+    }
+    #phone{
+        width: 70%;
+    }
+    .select{
+        width: 30%;
+    }
+    .button{
+        width: 100%;
+    }
+    footer{
+        background:#F8F8F8;
+        margin-top: 28px;
+        height: 100%;
+        width: 100%;        
+    }
+    .nav{
+        padding: 11px 80px 11px 80px;
+        justify-content: center;
+    }
+    .nav-item:not(:last-child){
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 320px) {
+	.container {
+		width: 90%;
+        margin-top: 0;
+	}
+    .logo{
+        padding-top: 20px;
+    }
+    .left{
+        margin-bottom: 38px;
+        height: 100%;
+    }
+    .l-text{
+        right: 5px;
+        top: 25px;
+    }
+    .ellipse{
+        width: 202px;
+        height: 202px;
+    }
+    .drug{
+        width: 223px;
+        height: 122px;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    select.footer__select-item{
+        width: 30%;
+        padding: 0;
+    }
+}
+
+

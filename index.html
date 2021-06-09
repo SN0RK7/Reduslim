@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <title>Reduslim</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/magic.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!--<div class="row d-flex justify-content-between">-->
+                <div class="col-lg-6 col-md-12 left animate__animated animate__backInLeft ">
+                    <div class="logo ">Reduslim</div>
+                    <div class="main">
+                        <div class="ellipse">
+                            <img src="img/Drugs.svg" class="drug" alt="">
+                        </div>
+                        <a class="l-text">ECO</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12  right animate__animated animate__backInRight">
+                    <div class="top">
+                        <div class="right-text">Сделай шаг
+                            к&nbsp;выздоровлению</div>
+                    </div>
+                    <form class="form" method="get">
+                        <div class="form__field">
+							<label for="name">Ваше <span>имя</span></label>
+							<input type="text" id="name" name="firstName" placeholder="Алексей" class="input" required>
+						</div>
+                        <div class="form__field">
+							<label for="telef">Ваш <span>телефон</span></label>
+							<div class="phone d-flex">
+                                <input type="tel" placeholder="+7 (123) 456 78-90" id="phone" name="phoneNumber" required>
+                                <select class="footer__select-item" name="select">        
+                                    <option class="lang__item" value="rus">
+                                        RU 
+                                    </option>
+                                    <option class="lang__item" value="en">
+                                        En
+                                    </option>
+                                </select>
+                            </div>                           
+						</div>
+                        <button type="submit" class="form__btn button" >
+                            <div class="btn-items">
+                                <div class="btn-text">Заказать</div>
+                                <img src="img/Vector 2.svg" alt="">
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            <!--</div>-->
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <footer class="footer ">
+            <div class="d-md-none nav d-flex">
+                <div class="nav-item">Trusted</div>
+                <div class="nav-item"><img src="img/lock.svg" class="lock" alt=""></div>
+                <div class="nav-item">Secure</div>
+            </div>
+        </footer>
+        <!-- /.footer -->
+    </header>
+    <!-- /.header -->
+</body>
+</html>
